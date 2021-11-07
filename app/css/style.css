@@ -1,34 +1,142 @@
+#wrapper{
+    background-color: #ecf0f1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+#sidebar{
+    background-color: #34495e;
+    width: 200px;
+    height: 100%;
+}
+.name{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2ecc71;
+    height: 90px;
+    width: 100%;
+}
+.menu{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 22px;
+    color: #95a5a6;
+    text-decoration: none;
+}
+.menu:hover{
+    color: white;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 .gordon{
+    margin-top: 18px;
+    margin-left: 45px;
     width: 100px;
     height: 100px;
 }
 .logo{
+    position: absolute;
+    margin: 23px 0.01px 0 549px;
     width: 36px;
     height: 44px;
 }
-
 .icon{
-    vertical-align: top;
-}
-#icon{
-   align-content: center;
+    margin: 35px 0 0 25px;
     width: 20px;
     height: 25px;
-align-items: center;
-    display: inline-block;
-    vertical-align: top;
+}
+.icon1{
+    margin: 35px 25px 0 0;
+    width: 20px;
+    height: 25px;
 }
 .intro{
-    width: 100%;
+    width: 1135px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
+    margin-left: 200px;
+    border-bottom: 1px solid #e5e5e5;
 }
-.nav{
-    margin: 10px;
+
+.font{
+    font-family: 'Secular One', sans-serif;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 175px;
+    font-size: 16px;
+}
+.rating-mini {
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 300px;
+    font-size: 0;
+}
+.rating-mini span {
+
+
+    font-size: 16px;
+    line-height: 1;
+    color: lightgrey;
+}
+.rating-mini > span:before {
+    content: '★';
+}
+.rating-mini > span.active {
+    color: #e74c3c;
+}
+.content{
+    width: 1135px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
 
 }
-.log{
-    vertical-align: top;
-    float:right;
+.position {
+    width: 325px;
+    height: 345px;
+    border: #dee1e2 solid 1px;
+    background-color: red;
+}
+.divv{
+    background-color: #ecf0f1;
+    float: right;
+}
+.div1{
+   margin-left: 44px;
+}
+.div2{
+margin-left: 32px;
+}
+#left_sidebar{
+    width: 200px;
+    height: 100%;
+}
+
+#left_sidebar:before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    background-color: #34495e;
 }
