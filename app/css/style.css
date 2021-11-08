@@ -1,46 +1,58 @@
 #wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #ecf0f1;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-
 }
 #sidebar{
+    position: fixed;
     background-color: #34495e;
     width: 200px;
     height: 100%;
 }
 .name{
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
     background-color: #2ecc71;
     height: 90px;
     width: 100%;
 }
+
 .menu{
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     margin-top: 22px;
     color: #95a5a6;
     text-decoration: none;
 }
+
+.menu:visited{
+    color: #95a5a6;
+}
 .menu:hover{
     color: white;
+}
+
+#avatar{
+    height: 48px;
+    width: 48px;
+    margin-left: 13px;
+    margin-right: 13px;
 }
 #main{
     width: 100%;
     height: 100%;
-    background-color: red;
+    
+    margin-left: 200px;
 }
 #navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
+}
 
 
 
