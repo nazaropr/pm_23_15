@@ -2,42 +2,66 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     background-color: #ecf0f1;
     width: 100%;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    overflow: auto;
 }
-#sidebar{
-    position: fixed;
-    background-color: #34495e;
+.sidebar{
     width: 200px;
     height: 100%;
+    background-color: #34495e;
+    position: absolute;
+    top: 0;
 }
+
 .name{
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
     background-color: #2ecc71;
     height: 90px;
     width: 100%;
 }
-
-.menu{
-    font-size: 16px;
+#name{
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 22px;
-    color: #95a5a6;
+    color: white;
     text-decoration: none;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #95a5a6;
+    padding-left: 27px;
+    height: 48px;
+    width: 200px;
+    transition: all 0.4s ease;
+    fill: #95a5a6;
+}
+.text{
+    margin-left: 20px;
+}
+#ul{
+    margin-top: 20px;
+    padding: 0;
+}
+.li{
+    list-style-type: none;
+    margin-top: 20px;
+}
 .menu:visited{
     color: #95a5a6;
 }
-.menu:hover{
+.menu:hover, .svg1:hover{
     color: white;
+    fill: #2ecc71;
+    background-color: #243342;
 }
-
 #avatar{
     height: 48px;
     width: 48px;
@@ -47,12 +71,42 @@
 #main{
     width: 100%;
     height: 100%;
-    
     margin-left: 200px;
 }
 #navbar{
-
+    height: 91px;
+    width: 100%;
+    background-color: white;
+    border-bottom: #e5e5e5 1px solid;
 }
+#content{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+}
+#heading{
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    border-bottom: #e5e5e5 1px solid;
+}
+.row2{
+    height: 345px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 36px;
+    background-color: chocolate;
+}
+.row3{
+    height: 305px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 78px;
+    background-color: mediumaquamarine;
+}
+
 
 
 
