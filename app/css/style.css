@@ -172,6 +172,7 @@
     border-right: #dee1e2 1px solid;
     border-radius: 0 3px 3px 0;
 }
+
 .small{
     float: left;
     background-color: white;
@@ -593,9 +594,103 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
+
 .text-decoration-none:hover{
     color: #2c3e50;
 }
+
 .text-decoration-none:focus{
     border-bottom: 4px #27ae60 solid;
 }
+
+#headchart{
+    height: 110px;
+    border-bottom: #dee1e2 1px solid;
+    margin: 10px 25px 0 25px;
+}
+
+.chart{
+    height: 166px;
+    margin: 0 25px 19px 25px;
+    padding-top: 15px;
+}
+
+.textc{
+    color: #7f8c8d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#diagram{
+    height: 54px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.bar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graychart{
+    margin-bottom: 7px;
+    height: 40px;
+    width: 44px;
+    background-color: #eaedf1;
+}
+
+#greenchart1{
+    height: 27px;
+    background: #2ecc71;
+    width: 100%;
+    margin-top: 13px;
+}
+
+#greenchart2{
+    height: 14px;
+    background: #2ecc71;
+    width: 100%;
+    margin-top: 26px;
+}
+
+#greenchart3{
+    height: 21px;
+    background: #2ecc71;
+    width: 100%;
+    margin-top: 19px;
+}
+
+.textchart{
+    color: #b1b9c2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+#plus{
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#figures{
+    color: #2ecc71;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    height: 40px;
+
+    margin-bottom: 5px;
+}
+
+#last{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #9ba3af;
+}
+
