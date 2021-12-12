@@ -4,7 +4,8 @@ $(function () {
     const json_url2 = "/app/json/data2.json";
     const json_url3 = "/app/json/data3.json";
 
-    var myLineChart = new Chart(lineChart, {
+
+    const myline = new Chart(lineChart, {
         type: 'line',
         data: {
             labels: [
@@ -38,20 +39,21 @@ $(function () {
                 yAxes: {
                     ticks: {
                         display: false,
-                        beginAtZero: true,
-                        stepSize: 20
+                        beginAtZero: true
+
                     },
                     grid: {
-                        drawBorder: false,
-                        lineWidth: 28,
-                        tickWidth: 28,
-                        color: function(context) {
-                            if (context.tick.value % 10 == 0 && context.tick.value > 18 ) {
-                                return '#eaedf1';
+                        display: false
+                        /*  drawBorder: false,
+                          lineWidth: 28,
+                          tickWidth: 28,
+                           color: function(context) {
+                               if (context.tick.value % 10 == 0 && context.tick.value > 18 ) {
+                                   return '#eaedf1';
 
-                            }
-                            return '';
-                        },
+                               }
+                               return '';
+                           },*/
                     },
                 },
             },
@@ -59,35 +61,25 @@ $(function () {
                 legend: {
                     display: false,
                 }
-            }
+            },
         },
     });
 
-    const btnClick = document.getElementById("chartClick");
+   const btn1Click = document.getElementById("chartClick1");
+   const btn2Click = document.getElementById("chartClick2");
+   const btn3Click = document.getElementById("chartClick3");
 
-    /*var k=1;
-    if(k===1) {
-        btnClick.onclick = function() {
-            ajax_chart(mylineChart, json_url1);
-            k++;
-        }
+    btn1Click.onclick = function() {
+        ajax_chart(myline, json_url1);
     }
-    else if(k===2) {
-        btnClick.onclick = function() {
-            ajax_chart(mylineChart, json_url2);
-            k++;
-        }
+    btn2Click.onclick = function() {
+        ajax_chart(myline, json_url2);
     }
-    else if(k===3) {
-        btnClick.onclick = function() {
-            ajax_chart(mylineChart, json_url3);
-            k = 1;
-        }
-    }*/
-    btnClick.onclick = function() {
-        ajax_chart(mylineChart, json_url3);
+    btn3Click.onclick = function() {
+        ajax_chart(myline, json_url3);
+    }
 
-    }
+
     function ajax_chart(chart, url) {
         $.ajax({
             url: url,
@@ -101,3 +93,4 @@ $(function () {
         });
     }
 });
+
