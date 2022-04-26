@@ -1,7 +1,7 @@
 {
   "name": "pm_23_15",
   "version": "1.0.0",
-  "description": "",
+  "description": "ПМ_23, лабораторна робота 1",
   "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^10.3.4",
@@ -314,7 +314,7 @@
     "url": "git+https://github.com/nazaropr/pm_23_15.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nazaropr/pm_23_15/issues"
   },
